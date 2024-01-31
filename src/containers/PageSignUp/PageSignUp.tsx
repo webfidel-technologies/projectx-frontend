@@ -32,7 +32,7 @@ const PageSignUp: FC<PageSignUpProps> = ({ className = "" }) => {
 
     try {
       // Replace with your API endpoint
-      const response = await axios.post('getbanny-backend.up.railway.app/api/V1/register', formState);
+      const response = await axios.post('https://getbanny-backend.up.railway.app/api/V1/register', formState);
       console.log(response.data);
       // Handle successful response here
 
