@@ -25,22 +25,45 @@ const PageSignUp: FC<PageSignUpProps> = ({ className = "" }) => {
   // Redirect to login page
   const navigate = useNavigate();
 
+  // const handleSubmit = async (event: { preventDefault: () => void; }) => {
+  //   event.preventDefault();
+  //   setIsLoading(true);
+  //   setErrorMessage('');
+
+  //   try {
+  //     // Replace with your API endpoint
+  //     const response = await axios.post('https://getbanny-backend.up.railway.app/api/V1/register', formState);
+  //     console.log(response.data);
+  //     // Handle successful response here
+
+  //     navigate('/login');
+
+
+  //   } catch (error) {
+  //     setErrorMessage('An error occurred. Please try again.');
+  //     console.error(error);
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+
+
+  // };
+
+
   const handleSubmit = async (event: { preventDefault: () => void; }) => {
     event.preventDefault();
     setIsLoading(true);
     setErrorMessage('');
-
+  
     try {
       // Replace with your API endpoint
       const response = await axios.post('https://getbanny-backend.up.railway.app/api/V1/register', formState);
       console.log(response.data);
       // Handle successful response here
-
-      
-
+  
       navigate('/login');
     } catch (error) {
-      setErrorMessage('An error occurred. Please try again.');
+      setErrorMessage((error as any).response.data.message);
       console.error(error);
     } finally {
       setIsLoading(false);
@@ -62,10 +85,10 @@ const PageSignUp: FC<PageSignUpProps> = ({ className = "" }) => {
 
         <div className="max-w-md mx-auto space-y-6 ">
 
+        {errorMessage && <p className="text-red-500">{errorMessage}</p>}
+
 
         <form className="grid grid-cols-1 gap-6" action="#" method="post" onSubmit={handleSubmit}>
-
-        {errorMessage && <p>{errorMessage}</p>}
 
           <label className="block">
             <span className="text-neutral-800 dark:text-neutral-200">
