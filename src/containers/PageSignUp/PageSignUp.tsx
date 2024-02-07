@@ -25,29 +25,6 @@ const PageSignUp: FC<PageSignUpProps> = ({ className = "" }) => {
   // Redirect to login page
   const navigate = useNavigate();
 
-  // const handleSubmit = async (event: { preventDefault: () => void; }) => {
-  //   event.preventDefault();
-  //   setIsLoading(true);
-  //   setErrorMessage('');
-
-  //   try {
-  //     // Replace with your API endpoint
-  //     const response = await axios.post('https://getbanny-backend.up.railway.app/api/V1/register', formState);
-  //     console.log(response.data);
-  //     // Handle successful response here
-
-  //     navigate('/login');
-
-
-  //   } catch (error) {
-  //     setErrorMessage('An error occurred. Please try again.');
-  //     console.error(error);
-  //   } finally {
-  //     setIsLoading(false);
-  //   }
-
-
-  // };
 
 
   const handleSubmit = async (event: { preventDefault: () => void; }) => {
@@ -57,13 +34,14 @@ const PageSignUp: FC<PageSignUpProps> = ({ className = "" }) => {
   
     try {
       // Replace with your API endpoint
-      const response = await axios.post('https://getbanny-backend.up.railway.app/api/V1/register', formState);
+      const response = await axios.post('http://127.0.0.1:8000/api/V1/register', formState);
       console.log(response.data);
       // Handle successful response here
-  
+
       navigate('/login');
-    } catch (error) {
-      setErrorMessage((error as any).response.data.message);
+    } catch (error: any) {
+      const errorMessage = error.response?.data?.error?.message ?? error.message;
+      setErrorMessage(errorMessage);
       console.error(error);
     } finally {
       setIsLoading(false);
@@ -145,16 +123,6 @@ const PageSignUp: FC<PageSignUpProps> = ({ className = "" }) => {
               onChange={handleInputChange}
             />
           </label>
-
-          {/* <label className="block">
-            <span className="text-neutral-800 dark:text-neutral-200">
-              Gender
-            </span>
-            <select name="gender" className="mt-1 text-neutral-800 dark:text-neutral-200" value={formState.gender} onChange={handleInputChange}>
-              <option value="female">Female</option>
-              <option value="male">Male</option>  
-            </select>
-          </label> */}
 
           <label className="block">
             <span className="text-neutral-800 dark:text-neutral-200">

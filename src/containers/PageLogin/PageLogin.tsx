@@ -1,35 +1,52 @@
-import React, { FC } from "react";
-import facebookSvg from "images/Facebook.svg";
-import twitterSvg from "images/Twitter.svg";
-import googleSvg from "images/Google.svg";
+import React, { FC, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Input from "shared/Input/Input";
-import { Link } from "react-router-dom";
 import ButtonPrimary from "shared/Button/ButtonPrimary";
+import { Link } from "react-router-dom";
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 export interface PageLoginProps {
   className?: string;
 }
 
-const loginSocials = [
-  {
-    name: "Continue with Facebook",
-    href: "#",
-    icon: facebookSvg,
-  },
-  {
-    name: "Continue with Twitter",
-    href: "#",
-    icon: twitterSvg,
-  },
-  {
-    name: "Continue with Google",
-    href: "#",
-    icon: googleSvg,
-  },
-];
+const PageLogin: FC<PageLoginProps> = ({ className = "" }): React.ReactElement<any, any> | null => {
+  const [formState, setFormState] = useState({ email: '', password: '' });
+  const [isLoading, setIsLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
-const PageLogin: FC<PageLoginProps> = ({ className = "" }) => {
+  const handleInputChange = (event: { target: { name: any; value: any; }; }) => {
+    setFormState({
+      ...formState,
+      [event.target.name]: event.target.value
+    });
+  };
+
+  // Redirect to dashboard page
+  const navigate = useNavigate();
+
+  const handleSubmit = async (event: { preventDefault: () => void; }) => {
+    event.preventDefault();
+    setIsLoading(true);
+    setErrorMessage('');
+  
+    try {
+      // Replace with your API endpoint
+      const response = await axios.post('http://127.0.0.1:8000/api/V1/login', formState);
+      console.log(response.data);
+      // Handle successful response here
+
+      navigate('/dashboard');
+    } catch (error: any) {
+      const errorMessage = error.response?.data?.error?.message ?? error.message;
+      setErrorMessage(errorMessage);
+      console.error(error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // ... rest of your component ...
   return (
     <div className={`nc-PageLogin ${className}`} data-nc-id="PageLogin">
       <Helmet>
@@ -39,54 +56,53 @@ const PageLogin: FC<PageLoginProps> = ({ className = "" }) => {
         <h2 className="my-20 flex items-center text-3xl leading-[115%] md:text-5xl md:leading-[115%] font-semibold text-neutral-900 dark:text-neutral-100 justify-center">
           Login
         </h2>
+
+        
+
         <div className="max-w-md mx-auto space-y-6">
-          <div className="grid gap-3">
-            {loginSocials.map((item, index) => (
-              <a
-                key={index}
-                href={item.href}
-                className="flex w-full rounded-lg bg-primary-50 dark:bg-neutral-800 px-4 py-3 transform transition-transform sm:px-6 hover:translate-y-[-2px]"
-              >
-                <img
-                  className="flex-shrink-0"
-                  src={item.icon}
-                  alt={item.name}
-                />
-                <h3 className="flex-grow text-center text-sm font-medium text-neutral-700 dark:text-neutral-300 sm:text-sm">
-                  {item.name}
-                </h3>
-              </a>
-            ))}
-          </div>
+
+
+        {errorMessage && <p className="text-red-500">{errorMessage}</p>}
+          
           {/* OR */}
-          <div className="relative text-center">
+          {/* <div className="relative text-center">
             <span className="relative z-10 inline-block px-4 font-medium text-sm bg-white dark:text-neutral-400 dark:bg-neutral-900">
               OR
             </span>
             <div className="absolute left-0 w-full top-1/2 transform -translate-y-1/2 border border-neutral-100 dark:border-neutral-800"></div>
-          </div>
+          </div> */}
           {/* FORM */}
-          <form className="grid grid-cols-1 gap-6" action="#" method="post">
-            <label className="block">
-              <span className="text-neutral-800 dark:text-neutral-200">
-                Email address
-              </span>
-              <Input
-                type="email"
-                placeholder="example@example.com"
-                className="mt-1"
-              />
-            </label>
-            <label className="block">
-              <span className="flex justify-between items-center text-neutral-800 dark:text-neutral-200">
-                Password
-                <Link to="/forgot-pass" className="text-sm text-green-600">
-                  Forgot password?
-                </Link>
-              </span>
-              <Input type="password" className="mt-1" />
-            </label>
-            <ButtonPrimary type="submit">Continue</ButtonPrimary>
+          <form className="grid grid-cols-1 gap-6" action="#" method="post" onSubmit={handleSubmit}>
+            
+          <label className="block">
+            <span className="text-neutral-800 dark:text-neutral-200">
+              Email address
+            </span>
+            <Input
+              type="email"
+              name="email"
+              placeholder="example@example.com"
+              className="mt-1"
+              value={formState.email}
+              onChange={handleInputChange}
+            />
+          </label>
+
+          <label className="block">
+            <span className="flex justify-between items-center text-neutral-800 dark:text-neutral-200">
+              Password
+            </span>
+            <Input
+              type="password" 
+              name="password" 
+              className="mt-1"
+              placeholder="enter password"
+              value={formState.password}
+              onChange={handleInputChange}
+            />
+          </label>
+
+            <ButtonPrimary type="submit">{isLoading ? 'Loading...' : 'Continue'}</ButtonPrimary>
           </form>
 
           {/* ==== */}
