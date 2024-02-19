@@ -1,5 +1,5 @@
 import Label from "components/Label/Label";
-import React, { FC } from "react";
+import React, { FC, SetStateAction } from "react";
 import ButtonPrimary from "shared/Button/ButtonPrimary";
 import Input from "shared/Input/Input";
 import Select from "shared/Select/Select";
@@ -7,12 +7,58 @@ import Textarea from "shared/Textarea/Textarea";
 import CommonLayout from "./CommonLayout";
 import { Helmet } from "react-helmet-async";
 import { avatarImgs } from "contains/fakeData";
+import { useState, useEffect } from 'react';
+
 
 export interface AccountPageProps {
   className?: string;
 }
 
 const AccountPage: FC<AccountPageProps> = ({ className = "" }) => {
+
+  const [user, setUser] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const token = localStorage.getItem('token');
+    
+        const res = await fetch('https://getbanny-backend.up.railway.app/api/V1/dashboard', {
+          headers: {
+            Authorization: `Bearer ${token}`
+          }
+        });
+
+        if(!res.ok) {
+          throw new Error('Failed to fetch user'); 
+        }
+
+        console.log(res);
+        
+        const userData = await res.json();
+        
+        setUser(userData);
+        
+      } catch (error) {
+        setError(error as SetStateAction<null>);  
+      }
+    };
+
+    fetchUser();
+  }, []);
+
+  if(error) {
+    return <div>Error!</div>
+  }
+
+  if (!user) {
+    return <div>Loading...</div> 
+  }
+ 
+  const { full_name, email } = user;
+
+
   return (
     <div className={`nc-AccountPage ${className}`} data-nc-id="AccountPage">
       <Helmet>
@@ -22,7 +68,7 @@ const AccountPage: FC<AccountPageProps> = ({ className = "" }) => {
         <div className="space-y-10 sm:space-y-12">
           {/* HEADING */}
           <h2 className="text-2xl sm:text-3xl font-semibold">
-            Account infomation
+            Account information: {(user as { dob: string }).dob}
           </h2>
           <div className="flex flex-col md:flex-row">
             <div className="flex-shrink-0 flex items-start">
@@ -61,7 +107,7 @@ const AccountPage: FC<AccountPageProps> = ({ className = "" }) => {
             <div className="flex-grow mt-10 md:mt-0 md:pl-16 max-w-3xl space-y-6">
               <div>
                 <Label>Full name</Label>
-                <Input className="mt-1.5" defaultValue="Enrico Cole" />
+                <Input className="mt-1.5" defaultValue={(user as { email: string }).email} />
               </div>
 
               {/* ---- */}

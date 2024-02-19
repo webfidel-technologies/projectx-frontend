@@ -28,19 +28,27 @@ const PageLogin: FC<PageLoginProps> = ({ className = "" }): React.ReactElement<a
   const handleSubmit = async (event: { preventDefault: () => void; }) => {
     event.preventDefault();
     setIsLoading(true);
-    setErrorMessage('');
-  
-    try {
-      // Replace with your API endpoint
-      const response = await axios.post('http://127.0.0.1:8000/api/V1/login', formState);
-      console.log(response.data);
-      // Handle successful response here
+    setErrorMessage(''); // Clear any existing error message
 
-      navigate('/dashboard');
+    try {
+      const response = await axios.post('https://getbanny-backend.up.railway.app/api/V1/login', formState);
+
+      console.log(response.data); //remove this line
+
+      // Handle successful response
+      localStorage.setItem('token', response.data.token);
+
+      // Handle successful response here
+      navigate('/account');
+
     } catch (error: any) {
-      const errorMessage = error.response?.data?.error?.message ?? error.message;
-      setErrorMessage(errorMessage);
-      console.error(error);
+      if (error.response) {
+        // The request was made and the server responded with a non-2xx status code
+         setErrorMessage(error.response.data.message); // Extract the error message
+      } else {
+        // Something else happened (network error, etc.)
+        setErrorMessage('An error occurred. Please check your network connection.');  
+      }
     } finally {
       setIsLoading(false);
     }
