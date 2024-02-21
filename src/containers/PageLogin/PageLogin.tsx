@@ -22,6 +22,9 @@ const PageLogin: FC<PageLoginProps> = ({ className = "" }): React.ReactElement<a
     });
   };
 
+
+  
+
   // Redirect to dashboard page
   const navigate = useNavigate();
 
