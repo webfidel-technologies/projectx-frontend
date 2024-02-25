@@ -1,1 +1,0 @@
-# get banny frontend template
