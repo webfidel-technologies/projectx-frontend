@@ -80,7 +80,7 @@
 									<button type="submit" value="Register" class="btn btn-secondary btnhover text-uppercase me-2">Register</button>
 								</div>
 							</form>
-							<script src="register.js"></script>
+							<script src="custom-js/register.js"></script>
 						</div>
 					</div>
 				</div>

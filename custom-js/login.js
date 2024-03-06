@@ -23,7 +23,7 @@ $(document).ready(function() {
                     localStorage.setItem('userToken', response.token);
 
                     // Redirect to the user's profile page (or wherever makes sense)
-                    window.location.href = 'myaccount.php'; 
+                    window.location.href = 'complete-account-setup.php'; 
                 } 
             },
             error: function(error) {

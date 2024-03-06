@@ -68,7 +68,7 @@
 							</div>
 						</form>
 
-						<script src="login.js"></script>
+						<script src="custom-js/login.js"></script>
 					</div>
 				</div>
 			</div>
