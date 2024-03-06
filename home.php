@@ -118,7 +118,7 @@
 						<div class="swiper-wrapper">
 
 							<div class="swiper-slide">
-								<a href="model-deatils.php">
+								<a href="model-details.php">
 									<div class="shop-card">
 										<div class="dz-media">
 											<img src="images/models/model-001.jpg" alt="image">
@@ -138,15 +138,15 @@
 											</h6>
 										</div>
 										<div class="product-tag">
-											<span class="badge badge-secondary">model</span>
-											<span class="badge badge-primary">Featured</span>
+											<!-- <span class="badge badge-secondary">model</span>
+														<span class="badge badge-primary">Featured</span> -->
 										</div>
 									</div>
 								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<a href="model-deatils.php">
+								<a href="model-details.php">
 									<div class="shop-card">
 										<div class="dz-media">
 											<img src="images/models/model-002.jpg" alt="image">
@@ -166,8 +166,8 @@
 											</h6>
 										</div>
 										<div class="product-tag">
-											<span class="badge badge-secondary">model</span>
-											<span class="badge badge-primary">Featured</span>
+											<!-- <span class="badge badge-secondary">model</span>
+														<span class="badge badge-primary">Featured</span> -->
 										</div>
 									</div>
 								</a>
@@ -175,7 +175,7 @@
 
 
 							<div class="swiper-slide">
-								<a href="model-deatils.php">
+								<a href="model-details.php">
 									<div class="shop-card">
 										<div class="dz-media">
 											<img src="images/models/model-003.jpg" alt="image">
@@ -195,8 +195,8 @@
 											</h6>
 										</div>
 										<div class="product-tag">
-											<span class="badge badge-secondary">model</span>
-											<span class="badge badge-primary">Featured</span>
+											<!-- <span class="badge badge-secondary">model</span>
+														<span class="badge badge-primary">Featured</span> -->
 										</div>
 									</div>
 								</a>
@@ -204,7 +204,7 @@
 
 
 							<div class="swiper-slide">
-								<a href="model-deatils.php">
+								<a href="model-details.php">
 									<div class="shop-card">
 										<div class="dz-media">
 											<img src="images/models/model-004.jpg" alt="image">
@@ -224,8 +224,8 @@
 											</h6>
 										</div>
 										<div class="product-tag">
-											<span class="badge badge-secondary">model</span>
-											<span class="badge badge-primary">Featured</span>
+											<!-- <span class="badge badge-secondary">model</span>
+														<span class="badge badge-primary">Featured</span> -->
 										</div>
 									</div>
 								</a>
@@ -233,7 +233,7 @@
 
 
 							<div class="swiper-slide">
-								<a href="model-deatils.php">
+								<a href="model-details.php">
 									<div class="shop-card">
 										<div class="dz-media" >
 											<img src="images/models/model-005.jpg" alt="image" class="fluid">
@@ -253,8 +253,8 @@
 											</h6>
 										</div>
 										<div class="product-tag">
-											<span class="badge badge-secondary">model</span>
-											<span class="badge badge-primary">Featured</span>
+											<!-- <span class="badge badge-secondary">model</span>
+														<span class="badge badge-primary">Featured</span> -->
 										</div>
 									</div>
 								</a>
@@ -304,7 +304,7 @@
 
 
 										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-deatils.php">
+											<a href="model-details.php">
 												<div class="shop-card">
 													<div class="dz-media">
 														<img src="images/models/model-006.jpg" alt="image">
@@ -331,7 +331,7 @@
 										</div>
 
 										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-deatils.php">
+											<a href="model-details.php">
 												<div class="shop-card">
 													<div class="dz-media">
 														<img src="images/models/model-007.jpg" alt="image">
@@ -351,15 +351,15 @@
 														</h6>
 													</div>
 													<div class="product-tag">
-														<span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span>
+														<!-- <span class="badge badge-secondary">model</span>
+														<span class="badge badge-primary">Featured</span> -->
 													</div>
 												</div>
 											</a>	
 										</div>
 
 										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-deatils.php">
+											<a href="model-details.php">
 												<div class="shop-card">
 													<div class="dz-media">
 														<img src="images/models/model-008.jpg" alt="image">
@@ -379,8 +379,8 @@
 														</h6>
 													</div>
 													<div class="product-tag">
-														<span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span>
+														<!-- <span class="badge badge-secondary">model</span>
+														<span class="badge badge-primary">Featured</span> -->
 													</div>
 												</div>
 											</a>	
@@ -388,7 +388,7 @@
 
 
 										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-deatils.php">
+											<a href="model-details.php">
 												<div class="shop-card">
 													<div class="dz-media">
 														<img src="images/models/model-009.jpg" alt="image">
@@ -408,8 +408,8 @@
 														</h6>
 													</div>
 													<div class="product-tag">
-														<span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span>
+														<!-- <span class="badge badge-secondary">model</span>
+														<span class="badge badge-primary">Featured</span> -->
 													</div>
 												</div>
 											</a>	
@@ -417,7 +417,7 @@
 
 
 										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-deatils.php">
+											<a href="model-details.php">
 												<div class="shop-card">
 													<div class="dz-media">
 														<img src="images/models/model-010.jpg" alt="image">
@@ -437,8 +437,8 @@
 														</h6>
 													</div>
 													<div class="product-tag">
-														<span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span>
+														<!-- <span class="badge badge-secondary">model</span>
+														<span class="badge badge-primary">Featured</span> -->
 													</div>
 												</div>
 											</a>	
@@ -447,7 +447,7 @@
 
 
 										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-deatils.php">
+											<a href="model-details.php">
 												<div class="shop-card">
 													<div class="dz-media">
 														<img src="images/models/model-011.jpg" alt="image">
@@ -467,8 +467,8 @@
 														</h6>
 													</div>
 													<div class="product-tag">
-														<span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span>
+														<!-- <span class="badge badge-secondary">model</span>
+														<span class="badge badge-primary">Featured</span> -->
 													</div>
 												</div>
 											</a>	
@@ -476,7 +476,7 @@
 
 
 										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-deatils.php">
+											<a href="model-details.php">
 												<div class="shop-card">
 													<div class="dz-media">
 														<img src="images/models/model-012.jpg" alt="image">
@@ -496,8 +496,8 @@
 														</h6>
 													</div>
 													<div class="product-tag">
-														<span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span>
+														<!-- <span class="badge badge-secondary">model</span>
+														<span class="badge badge-primary">Featured</span> -->
 													</div>
 												</div>
 											</a>	
@@ -505,7 +505,7 @@
 
 
 										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-deatils.php">
+											<a href="model-details.php">
 												<div class="shop-card">
 													<div class="dz-media">
 														<img src="images/models/model-013.jpg" alt="image">
@@ -525,15 +525,15 @@
 														</h6>
 													</div>
 													<div class="product-tag">
-														<span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span>
+														<!-- <span class="badge badge-secondary">model</span>
+														<span class="badge badge-primary">Featured</span> -->
 													</div>
 												</div>
 											</a>	
 										</div>
 
 										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-deatils.php">
+											<a href="model-details.php">
 												<div class="shop-card">
 													<div class="dz-media">
 														<img src="images/models/model-014.jpg" alt="image">
@@ -553,8 +553,8 @@
 														</h6>
 													</div>
 													<div class="product-tag">
-														<span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span>
+														<!-- <span class="badge badge-secondary">model</span>
+														<span class="badge badge-primary">Featured</span> -->
 													</div>
 												</div>
 											</a>	
@@ -562,28 +562,28 @@
 
 
 										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-deatils.php">
+											<a href="model-details.php">
 												<div class="shop-card">
 													<div class="dz-media">
 														<img src="images/models/model-015.jpg" alt="image">
 														
 													</div>
-													<div class="dz-content" style="background: #000;">
+													<div class="dz-content">
 
-														<h5 class="title" style="text-align: left; color: #fff;">
-															<a href="model-details.php" style="color: #fff;">
+														<h5 class="title" style="text-align: left;">
+															<a href="model-details.php" style="color: #000;">
 																Gina babe 
-																<img src="images/custom/verify-con.png" alt="" width="20px">
+																<img src="images/custom/veri-con.png" alt="" width="13px">
 															</a>
 														</h5>
 														
-														<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 															Lorem ipsum dolor sit amet consectetur
 														</h6>
 													</div>
 													<div class="product-tag">
-														<span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span>
+														<!-- <span class="badge badge-secondary">model</span>
+														<span class="badge badge-primary">Featured</span> -->
 													</div>
 												</div>
 											</a>	
