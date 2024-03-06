@@ -1,3 +1,6 @@
+<script src="custom-js/check-login.js"></script>
+
+
 <header class="site-header mo-left header header-transparent">		
 	
 		<!-- Main Header -->
@@ -32,9 +35,9 @@
 
                             <li><a href="contact-us.php">Contact Us</a></li>
 
-                            <li><a href="register.php">Signup</a></li>
+                            <li><a id="loginStatus1" href="register.php">Signup</a></li>
 
-                            <li><a href="login.php">Login</a></li>
+                            <li><a id="loginStatus2" href="login.php">Login</a></li>
 
 						</ul>
 						
