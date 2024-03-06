@@ -124,16 +124,16 @@
 											<img src="images/models/model-001.jpg" alt="image">
 											
 										</div>
-										<div class="dz-content" style="background: #000;">
+										<div class="dz-content">
 
-											<h5 class="title" style="text-align: left; color: #fff;">
-												<a href="model-details.php" style="color: #fff;">
+											<h5 class="title" style="text-align: left;">
+												<a href="model-details.php" style="color: #000;">
 													Gina babe 
-													<img src="images/custom/verify-con.png" alt="" width="20px">
+													<img src="images/custom/veri-con.png" alt="" width="13px">
 												</a>
 											</h5>
 											
-											<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+											<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 												Lorem ipsum dolor sit amet consectetur
 											</h6>
 										</div>
@@ -152,16 +152,16 @@
 											<img src="images/models/model-002.jpg" alt="image">
 											
 										</div>
-										<div class="dz-content" style="background: #000;">
+										<div class="dz-content">
 
-											<h5 class="title" style="text-align: left; color: #fff;">
-												<a href="model-details.php" style="color: #fff;">
+											<h5 class="title" style="text-align: left;">
+												<a href="model-details.php" style="color: #000;">
 													Gina babe 
-													<img src="images/custom/verify-con.png" alt="" width="20px">
+													<img src="images/custom/veri-con.png" alt="" width="13px">
 												</a>
 											</h5>
 											
-											<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+											<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 												Lorem ipsum dolor sit amet consectetur
 											</h6>
 										</div>
@@ -181,16 +181,16 @@
 											<img src="images/models/model-003.jpg" alt="image">
 											
 										</div>
-										<div class="dz-content" style="background: #000;">
+										<div class="dz-content">
 
-											<h5 class="title" style="text-align: left; color: #fff;">
-												<a href="model-details.php" style="color: #fff;">
+											<h5 class="title" style="text-align: left;">
+												<a href="model-details.php" style="color: #000;">
 													Gina babe 
-													<img src="images/custom/verify-con.png" alt="" width="20px">
+													<img src="images/custom/veri-con.png" alt="" width="13px">
 												</a>
 											</h5>
 											
-											<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+											<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 												Lorem ipsum dolor sit amet consectetur
 											</h6>
 										</div>
@@ -210,16 +210,16 @@
 											<img src="images/models/model-004.jpg" alt="image">
 											
 										</div>
-										<div class="dz-content" style="background: #000;">
+										<div class="dz-content">
 
-											<h5 class="title" style="text-align: left; color: #fff;">
-												<a href="model-details.php" style="color: #fff;">
+											<h5 class="title" style="text-align: left;">
+												<a href="model-details.php" style="color: #000;">
 													Gina babe 
-													<img src="images/custom/verify-con.png" alt="" width="20px">
+													<img src="images/custom/veri-con.png" alt="" width="13px">
 												</a>
 											</h5>
 											
-											<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+											<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 												Lorem ipsum dolor sit amet consectetur
 											</h6>
 										</div>
@@ -239,16 +239,16 @@
 											<img src="images/models/model-005.jpg" alt="image" class="fluid">
 											
 										</div>
-										<div class="dz-content" style="background: #000;">
+										<div class="dz-content">
 
-											<h5 class="title" style="text-align: left; color: #fff;">
-												<a href="model-details.php" style="color: #fff;">
+											<h5 class="title" style="text-align: left;">
+												<a href="model-details.php" style="color: #000;">
 													Gina babe 
-													<img src="images/custom/verify-con.png" alt="" width="20px">
+													<img src="images/custom/veri-con.png" alt="" width="13px">
 												</a>
 											</h5>
 											
-											<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+											<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 												Lorem ipsum dolor sit amet consectetur
 											</h6>
 										</div>
@@ -310,16 +310,16 @@
 														<img src="images/models/model-006.jpg" alt="image">
 														
 													</div>
-													<div class="dz-content" style="background: #000;">
+													<div class="dz-content">
 
-														<h5 class="title" style="text-align: left; color: #fff;">
-															<a href="model-details.php" style="color: #fff;">
+														<h5 class="title" style="text-align: left;">
+															<a href="model-details.php" style="color: #000;">
 																Gina babe 
-																<img src="images/custom/verify-con.png" alt="" width="20px">
+																<img src="images/custom/veri-con.png" alt="" width="13px">
 															</a>
 														</h5>
 														
-														<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 															Lorem ipsum dolor sit amet consectetur
 														</h6>
 													</div>
@@ -337,16 +337,16 @@
 														<img src="images/models/model-007.jpg" alt="image">
 														
 													</div>
-													<div class="dz-content" style="background: #000;">
+													<div class="dz-content">
 
-														<h5 class="title" style="text-align: left; color: #fff;">
-															<a href="model-details.php" style="color: #fff;">
+														<h5 class="title" style="text-align: left;">
+															<a href="model-details.php" style="color: #000;">
 																Gina babe 
-																<img src="images/custom/verify-con.png" alt="" width="20px">
+																<img src="images/custom/veri-con.png" alt="" width="13px">
 															</a>
 														</h5>
 														
-														<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 															Lorem ipsum dolor sit amet consectetur
 														</h6>
 													</div>
@@ -365,16 +365,16 @@
 														<img src="images/models/model-008.jpg" alt="image">
 														
 													</div>
-													<div class="dz-content" style="background: #000;">
+													<div class="dz-content">
 
-														<h5 class="title" style="text-align: left; color: #fff;">
-															<a href="model-details.php" style="color: #fff;">
+														<h5 class="title" style="text-align: left;">
+															<a href="model-details.php" style="color: #000;">
 																Gina babe 
-																<img src="images/custom/verify-con.png" alt="" width="20px">
+																<img src="images/custom/veri-con.png" alt="" width="13px">
 															</a>
 														</h5>
 														
-														<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 															Lorem ipsum dolor sit amet consectetur
 														</h6>
 													</div>
@@ -394,16 +394,16 @@
 														<img src="images/models/model-009.jpg" alt="image">
 														
 													</div>
-													<div class="dz-content" style="background: #000;">
+													<div class="dz-content">
 
-														<h5 class="title" style="text-align: left; color: #fff;">
-															<a href="model-details.php" style="color: #fff;">
+														<h5 class="title" style="text-align: left;">
+															<a href="model-details.php" style="color: #000;">
 																Gina babe 
-																<img src="images/custom/verify-con.png" alt="" width="20px">
+																<img src="images/custom/veri-con.png" alt="" width="13px">
 															</a>
 														</h5>
 														
-														<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 															Lorem ipsum dolor sit amet consectetur
 														</h6>
 													</div>
@@ -423,16 +423,16 @@
 														<img src="images/models/model-010.jpg" alt="image">
 														
 													</div>
-													<div class="dz-content" style="background: #000;">
+													<div class="dz-content">
 
-														<h5 class="title" style="text-align: left; color: #fff;">
-															<a href="model-details.php" style="color: #fff;">
+														<h5 class="title" style="text-align: left;">
+															<a href="model-details.php" style="color: #000;">
 																Gina babe 
-																<img src="images/custom/verify-con.png" alt="" width="20px">
+																<img src="images/custom/veri-con.png" alt="" width="13px">
 															</a>
 														</h5>
 														
-														<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 															Lorem ipsum dolor sit amet consectetur
 														</h6>
 													</div>
@@ -453,16 +453,16 @@
 														<img src="images/models/model-011.jpg" alt="image">
 														
 													</div>
-													<div class="dz-content" style="background: #000;">
+													<div class="dz-content">
 
-														<h5 class="title" style="text-align: left; color: #fff;">
-															<a href="model-details.php" style="color: #fff;">
+														<h5 class="title" style="text-align: left;">
+															<a href="model-details.php" style="color: #000;">
 																Gina babe 
-																<img src="images/custom/verify-con.png" alt="" width="20px">
+																<img src="images/custom/veri-con.png" alt="" width="13px">
 															</a>
 														</h5>
 														
-														<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 															Lorem ipsum dolor sit amet consectetur
 														</h6>
 													</div>
@@ -482,16 +482,16 @@
 														<img src="images/models/model-012.jpg" alt="image">
 														
 													</div>
-													<div class="dz-content" style="background: #000;">
+													<div class="dz-content">
 
-														<h5 class="title" style="text-align: left; color: #fff;">
-															<a href="model-details.php" style="color: #fff;">
+														<h5 class="title" style="text-align: left;">
+															<a href="model-details.php" style="color: #000;">
 																Gina babe 
-																<img src="images/custom/verify-con.png" alt="" width="20px">
+																<img src="images/custom/veri-con.png" alt="" width="13px">
 															</a>
 														</h5>
 														
-														<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 															Lorem ipsum dolor sit amet consectetur
 														</h6>
 													</div>
@@ -511,16 +511,16 @@
 														<img src="images/models/model-013.jpg" alt="image">
 														
 													</div>
-													<div class="dz-content" style="background: #000;">
+													<div class="dz-content">
 
-														<h5 class="title" style="text-align: left; color: #fff;">
-															<a href="model-details.php" style="color: #fff;">
+														<h5 class="title" style="text-align: left;">
+															<a href="model-details.php" style="color: #000;">
 																Gina babe 
-																<img src="images/custom/verify-con.png" alt="" width="20px">
+																<img src="images/custom/veri-con.png" alt="" width="13px">
 															</a>
 														</h5>
 														
-														<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 															Lorem ipsum dolor sit amet consectetur
 														</h6>
 													</div>
@@ -539,16 +539,16 @@
 														<img src="images/models/model-014.jpg" alt="image">
 														
 													</div>
-													<div class="dz-content" style="background: #000;">
+													<div class="dz-content">
 
-														<h5 class="title" style="text-align: left; color: #fff;">
-															<a href="model-details.php" style="color: #fff;">
+														<h5 class="title" style="text-align: left;">
+															<a href="model-details.php" style="color: #000;">
 																Gina babe 
-																<img src="images/custom/verify-con.png" alt="" width="20px">
+																<img src="images/custom/veri-con.png" alt="" width="13px">
 															</a>
 														</h5>
 														
-														<h6 style="text-align: left; color: #eaeaea; font-size: 12px;">
+														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
 															Lorem ipsum dolor sit amet consectetur
 														</h6>
 													</div>
