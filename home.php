@@ -303,6 +303,81 @@
 									<div class="row gx-xl-4 g-3 mb-xl-0 mb-md-0 mb-3">
 
 
+
+									<?php
+										// API endpoint URL
+										$url = 'https://getbanny-backend.up.railway.app/api/V1/models';
+
+										// Initialize cURL
+										$ch = curl_init();
+
+										// Set cURL options
+										curl_setopt($ch, CURLOPT_URL, $url);
+										curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+										// Execute the request
+										$response = curl_exec($ch);
+
+										// Check for errors
+										if ($response === false) {
+											echo 'Error: ' . curl_error($ch);
+											curl_close($ch);
+											exit;
+										}
+
+										// Close cURL
+										curl_close($ch);
+
+										// Decode the JSON response
+										$data = json_decode($response, true);
+
+										// Check if the decoding was successful
+										if (!$data) {
+											echo "Error decoding JSON data.";
+											exit;
+										}
+
+										// Loop through the users
+										foreach ($data['users'] as $user) {
+											echo '
+											
+											
+												<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
+													<a href="model-details.php?model_id='.$user['user_code'].'">
+														<div class="shop-card">
+															<div class="dz-media">
+																<img src="images/models/model-006.jpg" alt="image">
+																
+															</div>
+															<div class="dz-content">
+
+																<h5 class="title" style="text-align: left;">
+																	<a href="model-details.php" style="color: #000;">
+																		'. $user['attributes']['display_name'] .' 
+																		<img src="images/custom/veri-con.png" alt="" width="13px">
+																	</a>
+																</h5>
+																
+																<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
+																Lorem ipsum dolor sit amet consectetur
+																<br>
+																'. $user['bios']['city'] .' - '. $user['attributes']['dob'] .'
+																</h6>
+															</div>
+															<div class="product-tag">
+																<!-- <span class="badge badge-secondary">Sale</span> -->
+															</div>
+														</div>
+													</a>	
+												</div>
+											
+											
+											';
+										}
+
+									?>
+
+
 										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
 											<a href="model-details.php">
 												<div class="shop-card">
@@ -324,7 +399,7 @@
 														</h6>
 													</div>
 													<div class="product-tag">
-														<span class="badge badge-secondary">Sale</span>
+														<!-- <span class="badge badge-secondary">Sale</span> -->
 													</div>
 												</div>
 											</a>	
