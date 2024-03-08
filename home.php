@@ -300,369 +300,81 @@
 
 
 								<div class="tab-pane fade active show" id="tab-list-grid" role="tabpanel" aria-labelledby="tab-list-grid-btn">
-									<div class="row gx-xl-4 g-3 mb-xl-0 mb-md-0 mb-3">
+									<div id="model-list" class="row gx-xl-4 g-3 mb-xl-0 mb-md-0 mb-3">
 
 
+									<!-- <span id="model-list"></span> -->
 
-									<?php
+									<script>
+										
+
 										// API endpoint URL
-										$url = 'https://getbanny-backend.up.railway.app/api/V1/models';
+										const url = 'https://getbanny-backend.up.railway.app/api/V1/models';
 
-										// Initialize cURL
-										$ch = curl_init();
+										// Fetch data from the API
+										async function fetchData() {
+											try {
+												const response = await fetch(url);
+												const data = await response.json();
 
-										// Set cURL options
-										curl_setopt($ch, CURLOPT_URL, $url);
-										curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+												if (!data) {
+												console.error("Error decoding JSON data.");
+												return;
+												}
 
-										// Execute the request
-										$response = curl_exec($ch);
+												// Loop through the users
+												const userList = data.users.map(user => {
+												const dob = user.attributes.dob;
+												const city = user.bios?.city ?? 'N/A'; // Use nullish coalescing operator or logical OR
 
-										// Check for errors
-										if ($response === false) {
-											echo 'Error: ' . curl_error($ch);
-											curl_close($ch);
-											exit;
-										}
-
-										// Close cURL
-										curl_close($ch);
-
-										// Decode the JSON response
-										$data = json_decode($response, true);
-
-										// Check if the decoding was successful
-										if (!$data) {
-											echo "Error decoding JSON data.";
-											exit;
-										}
-
-										// Loop through the users
-										foreach ($data['users'] as $user) {
-											echo '
-											
-											
-												<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-													<a href="model-details.php?model_id='.$user['user_code'].'">
-														<div class="shop-card">
+												return `
+													<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
+														<a href="model-details.php?model_id=${user.user_code}">
+															<div class="shop-card">
 															<div class="dz-media">
 																<img src="images/models/model-006.jpg" alt="image">
-																
 															</div>
 															<div class="dz-content">
-
 																<h5 class="title" style="text-align: left;">
-																	<a href="model-details.php" style="color: #000;">
-																		'. $user['attributes']['display_name'] .' 
-																		<img src="images/custom/veri-con.png" alt="" width="13px">
-																	</a>
+																<a href="model-details.php" style="color: #000;">${user.attributes.display_name} <img src="images/custom/veri-con.png" alt="" width="13px"></a>
 																</h5>
-																
 																<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
-																Lorem ipsum dolor sit amet consectetur
-																<br>
-																'. $user['bios']['city'] .' - '. $user['attributes']['dob'] .'
+																Lorem ipsum dolor sit amet consectetur <br> ${city} - ${dob}
 																</h6>
 															</div>
 															<div class="product-tag">
 																<!-- <span class="badge badge-secondary">Sale</span> -->
 															</div>
-														</div>
-													</a>	
-												</div>
+															</div>
+														</a>
+													</div>
+												`;
+												});
+
+												const modelListContainer = document.getElementById('model-list');
+
+												// Join the HTML snippets and insert into the container
+												modelListContainer.innerHTML = userList.join(' ');
+
+												
+											} catch (error) {
+												console.error('Error:', error);
+											}
+
 											
-											
-											';
+
 										}
 
-									?>
+										// Call the fetchData function
+										fetchData();
 
 
-										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-details.php">
-												<div class="shop-card">
-													<div class="dz-media">
-														<img src="images/models/model-006.jpg" alt="image">
-														
-													</div>
-													<div class="dz-content">
+									</script>
 
-														<h5 class="title" style="text-align: left;">
-															<a href="model-details.php" style="color: #000;">
-																Gina babe 
-																<img src="images/custom/veri-con.png" alt="" width="13px">
-															</a>
-														</h5>
-														
-														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
-															Lorem ipsum dolor sit amet consectetur
-														</h6>
-													</div>
-													<div class="product-tag">
-														<!-- <span class="badge badge-secondary">Sale</span> -->
-													</div>
-												</div>
-											</a>	
-										</div>
-
-										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-details.php">
-												<div class="shop-card">
-													<div class="dz-media">
-														<img src="images/models/model-007.jpg" alt="image">
-														
-													</div>
-													<div class="dz-content">
-
-														<h5 class="title" style="text-align: left;">
-															<a href="model-details.php" style="color: #000;">
-																Gina babe 
-																<img src="images/custom/veri-con.png" alt="" width="13px">
-															</a>
-														</h5>
-														
-														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
-															Lorem ipsum dolor sit amet consectetur
-														</h6>
-													</div>
-													<div class="product-tag">
-														<!-- <span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span> -->
-													</div>
-												</div>
-											</a>	
-										</div>
-
-										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-details.php">
-												<div class="shop-card">
-													<div class="dz-media">
-														<img src="images/models/model-008.jpg" alt="image">
-														
-													</div>
-													<div class="dz-content">
-
-														<h5 class="title" style="text-align: left;">
-															<a href="model-details.php" style="color: #000;">
-																Gina babe 
-																<img src="images/custom/veri-con.png" alt="" width="13px">
-															</a>
-														</h5>
-														
-														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
-															Lorem ipsum dolor sit amet consectetur
-														</h6>
-													</div>
-													<div class="product-tag">
-														<!-- <span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span> -->
-													</div>
-												</div>
-											</a>	
-										</div>
+									
 
 
-										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-details.php">
-												<div class="shop-card">
-													<div class="dz-media">
-														<img src="images/models/model-009.jpg" alt="image">
-														
-													</div>
-													<div class="dz-content">
-
-														<h5 class="title" style="text-align: left;">
-															<a href="model-details.php" style="color: #000;">
-																Gina babe 
-																<img src="images/custom/veri-con.png" alt="" width="13px">
-															</a>
-														</h5>
-														
-														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
-															Lorem ipsum dolor sit amet consectetur
-														</h6>
-													</div>
-													<div class="product-tag">
-														<!-- <span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span> -->
-													</div>
-												</div>
-											</a>	
-										</div>
-
-
-										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-details.php">
-												<div class="shop-card">
-													<div class="dz-media">
-														<img src="images/models/model-010.jpg" alt="image">
-														
-													</div>
-													<div class="dz-content">
-
-														<h5 class="title" style="text-align: left;">
-															<a href="model-details.php" style="color: #000;">
-																Gina babe 
-																<img src="images/custom/veri-con.png" alt="" width="13px">
-															</a>
-														</h5>
-														
-														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
-															Lorem ipsum dolor sit amet consectetur
-														</h6>
-													</div>
-													<div class="product-tag">
-														<!-- <span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span> -->
-													</div>
-												</div>
-											</a>	
-										</div>
-
-
-
-										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-details.php">
-												<div class="shop-card">
-													<div class="dz-media">
-														<img src="images/models/model-011.jpg" alt="image">
-														
-													</div>
-													<div class="dz-content">
-
-														<h5 class="title" style="text-align: left;">
-															<a href="model-details.php" style="color: #000;">
-																Gina babe 
-																<img src="images/custom/veri-con.png" alt="" width="13px">
-															</a>
-														</h5>
-														
-														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
-															Lorem ipsum dolor sit amet consectetur
-														</h6>
-													</div>
-													<div class="product-tag">
-														<!-- <span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span> -->
-													</div>
-												</div>
-											</a>	
-										</div>
-
-
-										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-details.php">
-												<div class="shop-card">
-													<div class="dz-media">
-														<img src="images/models/model-012.jpg" alt="image">
-														
-													</div>
-													<div class="dz-content">
-
-														<h5 class="title" style="text-align: left;">
-															<a href="model-details.php" style="color: #000;">
-																Gina babe 
-																<img src="images/custom/veri-con.png" alt="" width="13px">
-															</a>
-														</h5>
-														
-														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
-															Lorem ipsum dolor sit amet consectetur
-														</h6>
-													</div>
-													<div class="product-tag">
-														<!-- <span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span> -->
-													</div>
-												</div>
-											</a>	
-										</div>
-
-
-										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-details.php">
-												<div class="shop-card">
-													<div class="dz-media">
-														<img src="images/models/model-013.jpg" alt="image">
-														
-													</div>
-													<div class="dz-content">
-
-														<h5 class="title" style="text-align: left;">
-															<a href="model-details.php" style="color: #000;">
-																Gina babe 
-																<img src="images/custom/veri-con.png" alt="" width="13px">
-															</a>
-														</h5>
-														
-														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
-															Lorem ipsum dolor sit amet consectetur
-														</h6>
-													</div>
-													<div class="product-tag">
-														<!-- <span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span> -->
-													</div>
-												</div>
-											</a>	
-										</div>
-
-										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-details.php">
-												<div class="shop-card">
-													<div class="dz-media">
-														<img src="images/models/model-014.jpg" alt="image">
-														
-													</div>
-													<div class="dz-content">
-
-														<h5 class="title" style="text-align: left;">
-															<a href="model-details.php" style="color: #000;">
-																Gina babe 
-																<img src="images/custom/veri-con.png" alt="" width="13px">
-															</a>
-														</h5>
-														
-														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
-															Lorem ipsum dolor sit amet consectetur
-														</h6>
-													</div>
-													<div class="product-tag">
-														<!-- <span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span> -->
-													</div>
-												</div>
-											</a>	
-										</div>
-
-
-										<div class="col-6 col-xl-3 col-lg-3 col-md-4 col-sm-6 m-md-b15 m-b30 grid-5">
-											<a href="model-details.php">
-												<div class="shop-card">
-													<div class="dz-media">
-														<img src="images/models/model-015.jpg" alt="image">
-														
-													</div>
-													<div class="dz-content">
-
-														<h5 class="title" style="text-align: left;">
-															<a href="model-details.php" style="color: #000;">
-																Gina babe 
-																<img src="images/custom/veri-con.png" alt="" width="13px">
-															</a>
-														</h5>
-														
-														<h6 style="text-align: left; color: #333; font-size: 10px; font-weight: 400;">
-															Lorem ipsum dolor sit amet consectetur
-														</h6>
-													</div>
-													<div class="product-tag">
-														<!-- <span class="badge badge-secondary">model</span>
-														<span class="badge badge-primary">Featured</span> -->
-													</div>
-												</div>
-											</a>	
-										</div>
+										
 
 										
 									</div>
