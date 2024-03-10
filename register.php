@@ -14,21 +14,27 @@
 
                 <!-- logo -->
                 <div class="flex justify-center mb-12">
-                    <img src="assets/images/logo.png" alt="" class="w-auto h-16 shrink-0 bg-fuchsia-100 px-3 rounded-2xl p-2.5">
+                    <img src="custom-images/logo/getbanny-logo.png" alt="" width="100px">
                 </div>
 
-                <form method="#" action="#" class="space-y-3">
+                <div style="color: red; text-align: center;" id="errorMessages"></div>
+                <div id="waitMessage" style="display: none; text-align: center;">Please wait...</div>
+
+                <form id="registrationForm" method="POST" class="space-y-3">
                     
-                    <input class="!w-full" id="username" name="username" type="text" autofocus=""  placeholder="username" required=""> 
-                    <input class="!w-full" id="name" name="name" type="text" autofocus=""  placeholder="Full name" required=""> 
-                    <input class="!w-full" id="email" name="email" type="email" autofocus=""  placeholder="Email" required=""> 
-                    <input class="!w-full" id="password" name="password" type="password" autofocus=""  placeholder="Password" required=""> 
+                    <input class="!w-full" id="display_name" name="display_name" type="text"  placeholder="username" required=""> 
+                    <input class="!w-full" id="email" name="email" type="email" placeholder="Email" required="">
+                    <input class="!w-full" id="phone_number" name="phone_number" type="tel" placeholder="Phone number" required="">
+                    <input class="!w-full" id="dob" name="dob" type="text" placeholder="Age" required="">
 
-                    <a href="#" class="hidden">
-                        <div class="text-sm text-right text-gray-400 py-4"> Forget password </div>
-                    </a>
+                    <select class="!w-full" name="gender" id="gender">
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>						
+                    </select>
 
-                    <button type="submit" class="font-medium w-full rounded-lg bg-slate-900 py-1.5 px-4 text-white h-[38px] active:scale-[0.97] transition-all duration-150"> <span>Get Started</span> </button>
+                    <input class="!w-full" id="password" name="password" type="password" placeholder="Password" required=""> 
+
+                    <button type="submit"  value="Register" class="font-medium w-full rounded-lg bg-slate-900 py-1.5 px-4 text-white h-[38px] active:scale-[0.97] transition-all duration-150"> <span>Get Started</span> </button>
 
                     <div class="space-x-2 text-sm text-center text-slate-400 dark:text-white/70">
                         <span> i have account? </span>
@@ -37,6 +43,7 @@
                     </div>
  
                 </form>
+                <script src="custom-js/register.js"></script>
 
                  
             </div>

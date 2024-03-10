@@ -7,7 +7,7 @@
     <link href="assets/images/favicon.png" rel="icon" type="image/png">
 
     <!-- title and description-->
-    <title>Instello</title>
+    <title>getBanny</title>
     <meta name="description" content="Instello - Sharing Photos platform HTML Template">
    
     <!-- css files -->
@@ -16,5 +16,7 @@
     
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  
 </head>

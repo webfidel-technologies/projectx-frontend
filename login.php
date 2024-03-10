@@ -1,25 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Favicon -->
-    <link href="assets/images/favicon.png" rel="icon" type="image/png">
-
-    <!-- title and description-->
-    <title>Instello</title>
-    <meta name="description" content="Instello - Sharing Photos platform HTML Template">
-   
-    <!-- css files -->
-    <link rel="stylesheet" href="assets/css/tailwind.css">
-    <link rel="stylesheet" href="assets/css/style.css">  
-    
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
- 
-</head>
+<?php include"head.php"; ?>
 <body class="bg-white dark:bg-slate-900">
 
 
@@ -33,36 +14,39 @@
 
                 <!-- logo -->
                 <div class="flex justify-center mb-12" uk-scrollspy="target: > *; cls: uk-animation-scale-up; delay: 100 ;repeat: true">
-                    <img src="assets/images/logo.png" alt="" class="w-auto h-16 shrink-0 bg-fuchsia-100 px-3 rounded-2xl p-2.5" >
+                <img src="custom-images/logo/getbanny-logo.png" alt="" width="100px">
                 </div>
 
+                <div style="color: red; text-align: center;" id="errorMessages"></div>
+                <div id="waitMessage" style="display: none; text-align: center;">Please wait...</div>
 
-                <form method="#" action="#" class="space-y-3"  uk-scrollspy="target: > *; cls: uk-animation-scale-up; delay: 100 ;repeat: true">
+                <form id="loginForm" method="POST" class="space-y-3"  uk-scrollspy="target: > *; cls: uk-animation-scale-up; delay: 100 ;repeat: true">
                     
                     <input class="!w-full" id="email" name="email" type="email" autofocus=""  placeholder="Email" required=""> 
-                    <input class="!w-full" id="email" name="email" type="email" autofocus=""  placeholder="Password" required=""> 
+                    <input class="!w-full" id="password" name="password" type="password" placeholder="Password" required=""> 
 
                     <a href="#" class="hidden">
                         <div class="text-sm text-right text-gray-400 py-4"> Forget password </div>
                     </a>
 
-                    <button type="submit" class="font-medium w-full rounded-lg bg-slate-900 py-1.5 px-4 text-white h-[38px] active:scale-[0.97] transition-all duration-150"> <span>Sign in</span> </button>
+                    <button type="submit" value="Login" class="font-medium w-full rounded-lg bg-slate-900 py-1.5 px-4 text-white h-[38px] active:scale-[0.97] transition-all duration-150"> <span>Sign in</span> </button>
  
-                    <div class="flex gap-3 justify-center text-2xl py-5 text-slate-500">
+                    <!-- <div class="flex gap-3 justify-center text-2xl py-5 text-slate-500">
 
                         <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
                         <a href="#"> <ion-icon name="logo-google"></ion-icon> </a>
                         <a href="#"> <ion-icon name="logo-apple"></ion-icon> </a> 
 
-                    </div>
+                    </div> -->
 
                     <div class="space-x-2 text-sm text-center text-slate-400 dark:text-white/70">
                         <span> No account? </span>
                         <span>—</span>
-                        <a href="form-register.html" class="text-gray-600 hover:text-gray-500">Join now</a>
+                        <a href="register.php" class="text-gray-600 hover:text-gray-500">Join now</a>
                     </div>
  
                 </form>
+                <script src="custom-js/login.js"></script>
 
                  
             </div>
