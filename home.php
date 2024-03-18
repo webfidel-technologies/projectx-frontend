@@ -165,7 +165,7 @@
                                                         <div class="relative w-full md:h-60 h-56 transition-all group-hover:scale-110 duration-300">
                                                             <img src="custom-images/models/model-008.jpg" alt="" class="object-cover w-full h-full inset-0">
                                                         </div> 
-                                                        <div class="absolute right-0 top-0 m-2 bg-slate-100 rounded-full py-0.5 px-2 text-sm font-bold dark:bg-slate-800/60"> $12 </div>
+                                                        <div class="absolute right-0 top-0 m-2 bg-slate-100 rounded-full py-0.5 px-2 text-sm font-bold dark:bg-slate-800/60"> new </div>
                                                     </div> 
                                                 </a>
                                                 <div class="py-2">
