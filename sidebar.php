@@ -6,12 +6,8 @@
         <div class="flex h-20 px-2 max-md:fixed max-md:top-0 max-md:w-full max-md:bg-white/80 max-md:left-0 max-md:px-4 max-md:h-14 max-md:shadow-sm max-md:dark:bg-slate-900/80 backdrop-blur-xl">
             <a href="home.php" id="logo" class="flex items-center gap-3">
 
-                <!-- logo icon -->
-                <!-- <img id="logo__icon" src="assets/images/logo-icon.png" alt="" class="md:w-8 hidden text-2xl max-xl:!block max-md:!hidden shrink-0 uk-animation-scale-up">  -->
-
-                <!-- text logo -->
-                <img id="logo__text" src="custom-images/logo/getbanny-logo-flat.png" alt="" class="w-full h-6 ml-1 max-xl:hidden max-md:block dark:!hidden">
-                <img id="logo__text" src="custom-images/logo/getbanny-logo-flat.png" alt="" class="w-full h-6 ml-1 !hidden max-xl:!hidden max-md:block dark:max-md:!block dark:!block">
+                
+            <h3 style="color: #000; font-weight: bold;">GetBanny.com</h3>
                 
             </a>
         </div>
