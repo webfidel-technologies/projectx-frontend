@@ -1116,7 +1116,7 @@ input:checked + .switch-button {
   margin-right: auto;
   max-width: 935px;
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 0.5rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }

@@ -7,11 +7,11 @@
             <a href="home.php" id="logo" class="flex items-center gap-3">
 
                 <!-- logo icon -->
-                <img id="logo__icon" src="assets/images/logo-icon.png" alt="" class="md:w-8 hidden text-2xl max-xl:!block max-md:!hidden shrink-0 uk-animation-scale-up"> 
+                <!-- <img id="logo__icon" src="assets/images/logo-icon.png" alt="" class="md:w-8 hidden text-2xl max-xl:!block max-md:!hidden shrink-0 uk-animation-scale-up">  -->
 
                 <!-- text logo -->
-                <img id="logo__text" src="assets/images/logo.svg" alt="" class="w-full h-6 ml-1 max-xl:hidden max-md:block dark:!hidden">
-                <img id="logo__text" src="assets/images/logo-dark.svg" alt="" class="w-full h-6 ml-1 !hidden max-xl:!hidden max-md:block dark:max-md:!block dark:!block">
+                <img id="logo__text" src="custom-images/logo/getbanny-logo-flat.png" alt="" class="w-full h-6 ml-1 max-xl:hidden max-md:block dark:!hidden">
+                <img id="logo__text" src="custom-images/logo/getbanny-logo-flat.png" alt="" class="w-full h-6 ml-1 !hidden max-xl:!hidden max-md:block dark:max-md:!block dark:!block">
                 
             </a>
         </div>

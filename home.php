@@ -19,26 +19,22 @@
                 <div uk-sticky="cls-active: bg-slate-100/60 z-30 backdrop-blur-lg px-4; start: 80; animation: uk-animation-slide-top">
                 
                     <!-- heading title -->
-                    <div class="page__heading">
-                        <h1> Models </h1>
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga pariatur officiis blanditiis unde expedita iure iste, numquam facilis quaerat alias.</p> -->
+                    <!-- <div class="page__heading">
+                        <h3> Models </h3>
                     </div>
 
-                    <!-- tab style one -->
                     <div class="overflow-hidden mt-6">
 
                         <div id="product-nav" class="relative flex items-center justify-between border-b dark:border-slate-800 uk-animation-slide-top-medium">
 
-                            <!-- tabs -->
                             <ul  class="flex gap-2 text-sm text-center text-gray-600 capitalize font-semibold dark:text-white/80 -mb-px"  
                                  uk-switcher="connect: #market_tab ; animation: uk-animation-slide-right-medium, uk-animation-slide-left-medium">
                                 
                                 <li> <a href="#" class="flex items-center md:p-4 p-2.5 border-b-2 border-transparent aria-expanded:text-black aria-expanded:border-black aria-expanded:dark:text-white aria-expanded:dark:border-white">Trending</a> </li>
-                                <!-- <li> <a href="#" class="flex items-center md:p-4 p-2.5 border-b-2 border-transparent aria-expanded:text-black aria-expanded:border-black aria-expanded:dark:text-white aria-expanded:dark:border-white"> <ion-icon class="mr-2 text-2xl max-md:hidden" name="cloud-download-outline"></ion-icon> Donwloads</a> </li> -->
+                                <li> <a href="#" class="flex items-center md:p-4 p-2.5 border-b-2 border-transparent aria-expanded:text-black aria-expanded:border-black aria-expanded:dark:text-white aria-expanded:dark:border-white"> <ion-icon class="mr-2 text-2xl max-md:hidden" name="cloud-download-outline"></ion-icon> Donwloads</a> </li>
                                 
                             </ul> 
      
-                            <!-- right button icons -->
                             <div class="flex items-center gap-4"> 
                                 <button class="flex" uk-toggle="target: #product-nav">
                                     <ion-icon class="text-xl" name="search"></ion-icon> 
@@ -52,7 +48,6 @@
     
                         </div> 
 
-                        <!-- Search box -->
                         <div id="product-nav" class=" w-full  rounded-lg z-30 uk-animation-slide-bottom" hidden>
                             <div class="bg-slate-200 py-2 px-3.5 rounded-md w-full flex items-center gap-3 dark:bg-dark2"> 
                                 <button type="submit" class="flex"> <ion-icon class="text-2xl" name="search"></ion-icon></button> 
@@ -63,7 +58,7 @@
                             </div>  
                         </div>
 
-                    </div>
+                    </div> -->
                 
 
                     <!-- tab style two .  default this tab is hidden just remove to see style tab 2 -->
