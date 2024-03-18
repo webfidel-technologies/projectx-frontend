@@ -43,6 +43,9 @@
                         <span> No account? </span>
                         <span>—</span>
                         <a href="register.php" class="text-gray-600 hover:text-gray-500">Join now</a>
+                        <br>
+                        <br>
+                        <a href="home.php" class="text-gray-600 hover:text-gray-500"><< home</a>
                     </div>
  
                 </form>

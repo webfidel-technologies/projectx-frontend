@@ -165,7 +165,7 @@
 
                                             <!-- single item -->
                                             <div>
-                                                <a href="model-view.php?id=${user.user_code}" class="group" uk-toggle="">
+                                                <a href="model-view.php?id=${user.user_code}" class="group">
                                                     <div class="relative overflow-hidden rounded-lg">
                                                         <div class="relative w-full md:h-60 h-56 transition-all group-hover:scale-110 duration-300">
                                                             <img src="custom-images/models/model-008.jpg" alt="" class="object-cover w-full h-full inset-0">

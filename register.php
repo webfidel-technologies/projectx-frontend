@@ -40,6 +40,9 @@
                         <span> i have account? </span>
                         <span>—</span>
                         <a href="login.php" class="text-gray-600 hover:text-gray-500">Login</a>
+                        <br>
+                        <br>
+                        <a href="home.php" class="text-gray-600 hover:text-gray-500"><< home</a>
                     </div>
  
                 </form>
