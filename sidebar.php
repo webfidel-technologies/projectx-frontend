@@ -6,8 +6,11 @@
         <div class="flex h-20 px-2 max-md:fixed max-md:top-0 max-md:w-full max-md:bg-white/80 max-md:left-0 max-md:px-4 max-md:h-14 max-md:shadow-sm max-md:dark:bg-slate-900/80 backdrop-blur-xl">
             <a href="home.php" id="logo" class="flex items-center gap-3">
 
-                
-            <h3 style="color: #000; font-weight: bold;">GetBanny.com</h3>
+                <!-- logo icon -->
+
+                <h3 style="color: #000; font-weight: bold;"  class="md:w-8 hidden text-2xl max-xl:!block max-md:!hidden shrink-0 uk-animation-scale-up">GB</h3>
+                <h3 style="color: #000; font-weight: bold;"  class="w-full h-6 ml-1 max-xl:hidden max-md:block dark:!hidden">GetBanny</h3>
+                <h3 style="color: #000; font-weight: bold;" class="w-full h-6 ml-1 !hidden max-xl:!hidden max-md:block dark:max-md:!block dark:!block">GetBanny</h3>
                 
             </a>
         </div>
