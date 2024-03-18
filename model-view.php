@@ -14,7 +14,7 @@
 
             <?php
                 // Get the userId from the URL
-                $userId = $_GET['userId'];
+                $userId = $_GET['id'];
 
                 // Check if userId is not null
                 if ($userId) {
